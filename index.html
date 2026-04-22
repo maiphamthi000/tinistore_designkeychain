@@ -55,10 +55,10 @@
   fabric.Image.fromURL('tuizip.png', function(frameImg) {
 
   // scale theo canvas (auto fit)
-  const scale = Math.min(
-    canvas.width / frameImg.width,
-    canvas.height / frameImg.height
-  );
+ const scale = Math.min(
+  (canvas.width * 0.8) / frameImg.width,
+  (canvas.height * 0.8) / frameImg.height
+);
 
   frameImg.set({
     scaleX: scale,
